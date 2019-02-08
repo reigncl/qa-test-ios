@@ -10,7 +10,9 @@ import UIKit
 
 class GiftViewController: UIViewController {
 
-    override func viewDidLoad() {
+  @IBOutlet var giftTableView: UITableView!
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
