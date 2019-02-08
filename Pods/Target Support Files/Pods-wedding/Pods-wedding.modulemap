@@ -1,0 +1,6 @@
+framework module Pods_wedding {
+  umbrella header "Pods-wedding-umbrella.h"
+
+  export *
+  module * { export * }
+}
