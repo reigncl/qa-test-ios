@@ -11,15 +11,15 @@ import Result
 import Moya
 
 class User: Codable {
-  var id: Int = 0
+  var id: String = ""
   var firstName: String = ""
   var nickName: String = ""
   var lastName: String = ""
   
   private enum CodingKeys: String, CodingKey {
     case id = "_id"
-    case firstName
-    case nickName
-    case lastName
+    case firstName = "firstname"
+    case nickName = "nickname"
+    case lastName = "lastname"
   }
 }

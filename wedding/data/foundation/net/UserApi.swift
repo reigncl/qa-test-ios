@@ -14,7 +14,7 @@ public enum UserApi {
 
 extension UserApi: TargetType {
   public var baseURL: URL {
-    return URL(string: "https://wedding-backend-app.herokuapp.com/")!
+    return URL(string: "https://wedding-backend-develop.herokuapp.com/")!
   }
   
   public var path: String {

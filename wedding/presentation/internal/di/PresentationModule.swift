@@ -28,11 +28,62 @@ class PresentationModule {
   static func resolveViewControllers(_ defaultContainer: Container) {
     
     defaultContainer.storyboardInitCompleted(UINavigationController.self) { _, _ in }
+    
+    defaultContainer.storyboardInitCompleted(PhotosViewController.self) { r, c in
+      c.presenter = r.resolve(PhotosPresenter.self)!
+      c.wireframe = r.resolve(Wireframe.self)!
+    }
+    
+    defaultContainer.storyboardInitCompleted(SitesViewController.self) { r, c in
+      c.presenter = r.resolve(SitesPresenter.self)!
+      c.wireframe = r.resolve(Wireframe.self)!
+    }
+    
+    defaultContainer.storyboardInitCompleted(WishesViewController.self) { r, c in
+      c.presenter = r.resolve(WishesPresenter.self)!
+      c.wireframe = r.resolve(Wireframe.self)!
+    }
+    
+    defaultContainer.storyboardInitCompleted(CreateWishViewController.self) { r, c in
+      c.presenter = r.resolve(BasePresenter.self)!
+      c.wireframe = r.resolve(Wireframe.self)!
+    }
+    
+    defaultContainer.storyboardInitCompleted(DetailWishViewController.self) { r, c in
+      c.presenter = r.resolve(BasePresenter.self)!
+      c.wireframe = r.resolve(Wireframe.self)!
+    }
+    
+    defaultContainer.storyboardInitCompleted(AddPhotoViewController.self) { r, c in
+      c.presenter = r.resolve(AddPhotoPresenter.self)!
+      c.wireframe = r.resolve(Wireframe.self)!
+    }
+    
+    defaultContainer.storyboardInitCompleted(DetailPhotoViewController.self) { r, c in
+      c.presenter = r.resolve(BasePresenter.self)!
+      c.wireframe = r.resolve(Wireframe.self)!
+    }
   }
   
   static func resolvePresenters(_ defaultContainer: Container) {
     defaultContainer.register(BasePresenter.self) { _ in
       BasePresenter()
+    }
+    
+    defaultContainer.register(PhotosPresenter.self) { r in
+      PhotosPresenter(repository: r.resolve(PhotosRepository.self)!)
+    }
+    
+    defaultContainer.register(SitesPresenter.self) { r in
+      SitesPresenter(repository: r.resolve(SitesRepository.self)!)
+    }
+    
+    defaultContainer.register(WishesPresenter.self) { r in
+      WishesPresenter(repository: r.resolve(WishesRepository.self)!)
+    }
+    
+    defaultContainer.register(AddPhotoPresenter.self) { r in
+      AddPhotoPresenter(repository: r.resolve(PhotosRepository.self)!, mediaUtils: r.resolve(MediaUtils.self)!)
     }
   }
 }

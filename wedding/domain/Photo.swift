@@ -11,7 +11,7 @@ import Result
 import Moya
 
 class Photo: Codable {
-  var id: Int = 0
+  var id: String = ""
   var title: String = ""
   var url: String = ""
   

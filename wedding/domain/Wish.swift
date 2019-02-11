@@ -11,7 +11,7 @@ import Result
 import Moya
 
 class Wish: Codable {
-  var id: Int = 0
+  var id: String = ""
   var user: User = User()
   var comment: String = ""
   
