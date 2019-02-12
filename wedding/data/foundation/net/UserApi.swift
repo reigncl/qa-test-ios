@@ -36,7 +36,7 @@ extension UserApi: TargetType {
   public var task: Task {
     switch self {
     case .register(let firstName, let nickName, let lastName):
-      return .requestParameters(parameters: ["firstName": firstName, "nickName": nickName,"lastName": lastName], encoding: JSONEncoding.default)
+      return .requestParameters(parameters: ["firstname": firstName, "nickname": nickName,"lastname": lastName], encoding: JSONEncoding.default)
     }
   }
   

@@ -31,4 +31,7 @@ class CreateWishViewController: BasePopup {
       listener?.setComment(commentTextView.text)
     }
   }
+  @IBAction func cancelButtonPressed(_ sender: UIButton) {
+    removeAnimate()
+  }
 }

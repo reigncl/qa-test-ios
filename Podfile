@@ -11,6 +11,7 @@ def pods
   pod 'Moya' , '~> 11.0'
   pod 'Kingfisher'
   pod 'SwiftLint'
+  pod 'IQKeyboardManagerSwift'
 end
 
 target 'wedding' do

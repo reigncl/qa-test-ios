@@ -8,12 +8,7 @@
 
 struct Constants {
   static let LOGGED_IN = "logged_in"
-  static let TOKEN = "token"
-  static let ORGANIZATION_BALANCE = "organization_balance"
-  static let PERSONAL_BALANCE = "personal_balance"
-  static let TOTAL_BALANCE = "total_balance"
-  static let ONBOARDING_SHOWN = "onboarding_shown"
-  static let HOCKEY_APP_ID = "d8291e816357467494ccacd5660e74f8"
-  static let SCANNER_TUTORIAL_SHOWN = "scanner_tutorial_shown"
-  static let SERIAL_TUTORIAL_SHOWN = "serial_tutorial_shown"
+  static let USER_ID = "user_id"
+  static let USER_NAME = "user_name"
+  static let USER_LAST_NAME = "user_last_name"
 }

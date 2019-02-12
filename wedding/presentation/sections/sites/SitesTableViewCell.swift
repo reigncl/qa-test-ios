@@ -21,8 +21,8 @@ class SitesTableViewCell: UITableViewCell {
     
     cardView.layer.shadowColor = UIColor.gray.cgColor
     cardView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-    cardView.layer.shadowRadius = 12.0
-    cardView.layer.shadowOpacity = 0.7
+    cardView.layer.shadowRadius = 7.0
+    cardView.layer.shadowOpacity = 0.5
   }
   
   override func setSelected(_ selected: Bool, animated: Bool) {

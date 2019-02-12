@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    IQKeyboardManager.shared.enable = true
+    
+    if UserDefaults.standard.bool(forKey: Constants.LOGGED_IN) {
+      let viewController:UIViewController = UIStoryboard(name: "TabBar", bundle: nil).instantiateViewController(withIdentifier: "TabBarViewController")
+      window!.rootViewController = nil
+      window!.rootViewController = viewController
+      window?.makeKey()
+    }
     return true
   }
 

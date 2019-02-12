@@ -68,6 +68,21 @@ class PresentationModule {
       c.presenter = r.resolve(BasePresenter.self)!
       c.wireframe = r.resolve(Wireframe.self)!
     }
+    
+    defaultContainer.storyboardInitCompleted(HomeViewController.self) { r, c in
+      c.presenter = r.resolve(BasePresenter.self)!
+      c.wireframe = r.resolve(Wireframe.self)!
+    }
+    
+    defaultContainer.storyboardInitCompleted(RegisterViewController.self) { r, c in
+      c.presenter = r.resolve(RegisterPresenter.self)!
+      c.wireframe = r.resolve(Wireframe.self)!
+    }
+    
+    defaultContainer.storyboardInitCompleted(GiftViewController.self) { r, c in
+      c.presenter = r.resolve(GiftPresenter.self)!
+      c.wireframe = r.resolve(Wireframe.self)!
+    }
   }
   
   static func resolvePresenters(_ defaultContainer: Container) {
@@ -89,6 +104,14 @@ class PresentationModule {
     
     defaultContainer.register(AddPhotoPresenter.self) { r in
       AddPhotoPresenter(repository: r.resolve(PhotosRepository.self)!, mediaUtils: r.resolve(MediaUtils.self)!)
+    }
+    
+    defaultContainer.register(RegisterPresenter.self) { r in
+      RegisterPresenter(repository: r.resolve(UserRepository.self)!)
+    }
+    
+    defaultContainer.register(GiftPresenter.self) { r in
+      GiftPresenter(repository: r.resolve(GiftRepository.self)!)
     }
   }
 }

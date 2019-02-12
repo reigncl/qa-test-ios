@@ -30,6 +30,9 @@ class DataModule {
       WishesRepository(api: getMoyaProvider())}
       .inObjectScope(.container)
     
+    defaultContainer.register(GiftRepository.self) { r in
+      GiftRepository()}.inObjectScope(.container)
+    
     defaultContainer.register(URLSessionConfiguration.self) { _ in
       let config = URLSessionConfiguration.default
       config.httpCookieStorage = HTTPCookieStorage.shared

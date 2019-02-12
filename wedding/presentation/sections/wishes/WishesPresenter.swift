@@ -30,7 +30,7 @@ class WishesPresenter: BasePresenter {
   
   func sendWish(_ comment: String) {
     self.view?.showLoading()
-    repository.sendWish(user: "5c61bdaa39959c0017574674", comment: comment) { wish in
+    repository.sendWish(user: UserDefaults.standard.string(forKey: Constants.USER_ID) ?? "", comment: comment) { wish in
       self.view?.hideLoading()
       self.view?.wishCreatedSuccessfully(wish)
     }
