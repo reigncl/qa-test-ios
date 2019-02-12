@@ -11,6 +11,16 @@ import UIKit
 
 class SitesTableViewDelegate: NSObject, UITableViewDelegate {
   
+  var onSiteSelected: ((_ index: Int) -> Void)
+  
+  init(onSiteSelected: @escaping ((_ index: Int) -> Void)) {
+    self.onSiteSelected = onSiteSelected
+    super.init()
+  }
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    onSiteSelected(indexPath.row + indexPath.section)
+  }
+  
   func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
     let  headerCell = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell") as! HeaderTableViewCell
     

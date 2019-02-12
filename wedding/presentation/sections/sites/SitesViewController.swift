@@ -21,7 +21,9 @@ class SitesViewController: BaseViewController<SitesPresenter>, SitesView {
     super.viewDidLoad()
     
     dataSource = SitesTableViewDataSource(sites: sites)
-    delegate = SitesTableViewDelegate()
+    delegate = SitesTableViewDelegate( onSiteSelected: { index in
+      self.wireframe.detailSite(site: self.sites[index]).show()
+    })
     
     siteTableView.dataSource = dataSource
     siteTableView.delegate = delegate
@@ -30,6 +32,7 @@ class SitesViewController: BaseViewController<SitesPresenter>, SitesView {
   }
   
   func sitesSuccessfully(_ sites: [Site]) {
+    self.sites = sites
     dataSource?.sites = sites
     siteTableView.reloadData()
   }

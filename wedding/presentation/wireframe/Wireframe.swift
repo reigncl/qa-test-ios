@@ -11,6 +11,13 @@ import Swinject
 
 class Wireframe {
 
+  func detailSite(site: Site) -> Screen {
+    let storyboard = UIStoryboard.init(name: "Sites", bundle: nil)
+    let detailSiteVC = storyboard.instantiateViewController(withIdentifier: String(describing: DetailSiteViewController.self)) as! DetailSiteViewController
+    detailSiteVC.site = site
+    return Screen(viewController: detailSiteVC, isModal: false)
+  }
+  
   func detailPhoto(photo: Photo) -> Screen {
     let storyboard = UIStoryboard.init(name: "Photos", bundle: nil)
     let detailPhotoVC = storyboard.instantiateViewController(withIdentifier: String(describing: DetailPhotoViewController.self)) as! DetailPhotoViewController

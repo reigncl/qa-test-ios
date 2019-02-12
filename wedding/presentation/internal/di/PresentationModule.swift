@@ -63,6 +63,11 @@ class PresentationModule {
       c.presenter = r.resolve(BasePresenter.self)!
       c.wireframe = r.resolve(Wireframe.self)!
     }
+    
+    defaultContainer.storyboardInitCompleted(DetailSiteViewController.self) { r, c in
+      c.presenter = r.resolve(BasePresenter.self)!
+      c.wireframe = r.resolve(Wireframe.self)!
+    }
   }
   
   static func resolvePresenters(_ defaultContainer: Container) {

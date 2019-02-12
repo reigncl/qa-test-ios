@@ -324,11 +324,11 @@
             </objects>
             <point key="canvasLocation" x="124" y="-849.62518740629696"/>
         </scene>
-        <!--Inicio-->
+        <!--Navigation Controller-->
         <scene sceneID="CcZ-6O-kPi">
             <objects>
                 <navigationController storyboardIdentifier="homeNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="UNu-OV-sgh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Inicio" id="daF-3E-WPT"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_action_heart" selectedImage="ic_action_heart" id="daF-3E-WPT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oeU-Wg-rfH">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -344,16 +344,22 @@
             </objects>
             <point key="canvasLocation" x="952.79999999999995" y="-560.86956521739137"/>
         </scene>
-        <!--Sitios-->
+        <!--Navigation Controller-->
         <scene sceneID="iiE-ce-qKl">
             <objects>
                 <navigationController storyboardIdentifier="sitesNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="e82-WS-Jy8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sitios" id="Fgc-9m-PZW"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_action_location" selectedImage="ic_action_location" id="Fgc-9m-PZW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kar-pw-dpO">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.72941176470000002" green="0.86666666670000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -364,11 +370,11 @@
             </objects>
             <point key="canvasLocation" x="14" y="91"/>
         </scene>
-        <!--Regalos-->
+        <!--Navigation Controller-->
         <scene sceneID="HBf-Yh-Rbx">
             <objects>
                 <navigationController storyboardIdentifier="giftNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="W1J-Z3-mA0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Regalos" id="cgV-gp-9xu"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_action_gift" selectedImage="ic_action_gift" id="cgV-gp-9xu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uW0-1x-k1X">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -384,11 +390,11 @@
             </objects>
             <point key="canvasLocation" x="-73" y="869"/>
         </scene>
-        <!--Deseos-->
+        <!--Navigation Controller-->
         <scene sceneID="iG8-aQ-ZTD">
             <objects>
                 <navigationController storyboardIdentifier="wishesNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="ReT-i0-mAL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Deseos" id="Jrv-jV-539"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_action_wish" selectedImage="ic_action_wish" id="Jrv-jV-539"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sWG-N4-arK">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -404,11 +410,11 @@
             </objects>
             <point key="canvasLocation" x="-1676" y="869.41529235382313"/>
         </scene>
-        <!--Fotos-->
+        <!--Navigation Controller-->
         <scene sceneID="uVZ-ba-Txh">
             <objects>
                 <navigationController storyboardIdentifier="photosNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="VZv-1o-Z4t" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Fotos" id="Aip-1I-Zji"/>
+                    <tabBarItem key="tabBarItem" title="" image="ic_action_picture" selectedImage="ic_action_picture" id="Aip-1I-Zji"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pyg-iJ-ztQ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -425,4 +431,11 @@
             <point key="canvasLocation" x="-815.20000000000005" y="-850.52473763118451"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_action_gift" width="48" height="48"/>
+        <image name="ic_action_heart" width="48" height="48"/>
+        <image name="ic_action_location" width="48" height="48"/>
+        <image name="ic_action_picture" width="48" height="48"/>
+        <image name="ic_action_wish" width="36" height="36"/>
+    </resources>
 </document>

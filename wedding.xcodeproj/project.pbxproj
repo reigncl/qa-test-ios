@@ -73,6 +73,10 @@
 		E88DBAC7220DE6F5009F490E /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBAC6220DE6F5009F490E /* PhotosViewController.swift */; };
 		E88DBAC9220DE76A009F490E /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBAC8220DE76A009F490E /* GiftViewController.swift */; };
 		E88DBACB220DE78E009F490E /* WishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBACA220DE78E009F490E /* WishesViewController.swift */; };
+		F909C23B22125095005232EF /* DetailSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F909C23A22125095005232EF /* DetailSiteViewController.swift */; };
+		F909C23D221250DD005232EF /* Sites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F909C23C221250DD005232EF /* Sites.storyboard */; };
+		F909C23F22125DD7005232EF /* String+html.swift in Sources */ = {isa = PBXBuildFile; fileRef = F909C23E22125DD7005232EF /* String+html.swift */; };
+		F909C24122127593005232EF /* UIImage+imagewithcolor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F909C24022127593005232EF /* UIImage+imagewithcolor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +175,10 @@
 		E88DBAC6220DE6F5009F490E /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		E88DBAC8220DE76A009F490E /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
 		E88DBACA220DE78E009F490E /* WishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishesViewController.swift; sourceTree = "<group>"; };
+		F909C23A22125095005232EF /* DetailSiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSiteViewController.swift; sourceTree = "<group>"; };
+		F909C23C221250DD005232EF /* Sites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sites.storyboard; sourceTree = "<group>"; };
+		F909C23E22125DD7005232EF /* String+html.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+html.swift"; sourceTree = "<group>"; };
+		F909C24022127593005232EF /* UIImage+imagewithcolor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+imagewithcolor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +247,8 @@
 			isa = PBXGroup;
 			children = (
 				E878FA982211BA88005A5FF8 /* UIApplication+topViewController.swift */,
+				F909C23E22125DD7005232EF /* String+html.swift */,
+				F909C24022127593005232EF /* UIImage+imagewithcolor.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -413,6 +423,7 @@
 		E88DBA9F220DDC97009F490E /* sites */ = {
 			isa = PBXGroup;
 			children = (
+				F909C2392212507B005232EF /* detail */,
 				E88DBAC4220DE6B5009F490E /* SitesViewController.swift */,
 				E878FAA82211CFD6005A5FF8 /* SitesTableViewCell.swift */,
 				E878FAAA2211D1E1005A5FF8 /* SitesTableViewDataSource.swift */,
@@ -420,6 +431,7 @@
 				E878FAAE2211D3A1005A5FF8 /* SitesView.swift */,
 				E878FAB02211D41F005A5FF8 /* SitesPresenter.swift */,
 				E878FAB22211D80E005A5FF8 /* HeaderTableViewCell.swift */,
+				F909C23C221250DD005232EF /* Sites.storyboard */,
 			);
 			path = sites;
 			sourceTree = "<group>";
@@ -533,6 +545,14 @@
 			path = utilities;
 			sourceTree = "<group>";
 		};
+		F909C2392212507B005232EF /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				F909C23A22125095005232EF /* DetailSiteViewController.swift */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -643,6 +663,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F909C23D221250DD005232EF /* Sites.storyboard in Resources */,
 				E88DBAC1220DE32E009F490E /* TabBar.storyboard in Resources */,
 				E88DBA58220DC5F9009F490E /* LaunchScreen.storyboard in Resources */,
 				E878FAC22211F0FB005A5FF8 /* Wish.storyboard in Resources */,
@@ -847,6 +868,7 @@
 				E88DBAB8220DE077009F490E /* PresentationModule.swift in Sources */,
 				E88DBAB6220DE063009F490E /* ApplicationModule.swift in Sources */,
 				E878FACC22121186005A5FF8 /* AddPhotoView.swift in Sources */,
+				F909C24122127593005232EF /* UIImage+imagewithcolor.swift in Sources */,
 				E878FAB32211D80E005A5FF8 /* HeaderTableViewCell.swift in Sources */,
 				E88DBAC7220DE6F5009F490E /* PhotosViewController.swift in Sources */,
 				E878FACE221211D2005A5FF8 /* AddPhotoPresenter.swift in Sources */,
@@ -856,6 +878,7 @@
 				E88DBA8F220DD609009F490E /* UserRepository.swift in Sources */,
 				E878FA992211BA88005A5FF8 /* UIApplication+topViewController.swift in Sources */,
 				E88DBA93220DD682009F490E /* WishesRepository.swift in Sources */,
+				F909C23F22125DD7005232EF /* String+html.swift in Sources */,
 				E88DBAA9220DDD7A009F490E /* BasePopup.swift in Sources */,
 				E88DBA8A220DCFE9009F490E /* WishesApi.swift in Sources */,
 				E88DBA99220DD769009F490E /* User.swift in Sources */,
@@ -872,6 +895,7 @@
 				E878FAB72211E8E3005A5FF8 /* WishesTableViewDataSource.swift in Sources */,
 				E88DBAC9220DE76A009F490E /* GiftViewController.swift in Sources */,
 				E88DBA88220DCFDE009F490E /* SitesApi.swift in Sources */,
+				F909C23B22125095005232EF /* DetailSiteViewController.swift in Sources */,
 				E878FAC02211F0C6005A5FF8 /* CreateWishViewController.swift in Sources */,
 				E878FAAD2211D1F2005A5FF8 /* SitesTableViewDelegate.swift in Sources */,
 				E88DBAAA220DDD7A009F490E /* BaseView.swift in Sources */,

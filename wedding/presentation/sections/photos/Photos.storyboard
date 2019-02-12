@@ -92,7 +92,7 @@
                                     <constraint firstAttribute="height" constant="30" id="mbe-TK-DfT"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="cross"/>
+                                <state key="normal" image="ic_close"/>
                                 <connections>
                                     <action selector="closeButtonPressed:" destination="BMJ-e0-bRO" eventType="touchUpInside" id="OjW-Xi-vUS"/>
                                 </connections>
@@ -128,6 +128,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cross" width="62" height="62"/>
+        <image name="ic_close" width="36" height="36"/>
     </resources>
 </document>
