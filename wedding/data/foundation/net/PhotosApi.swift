@@ -15,7 +15,7 @@ public enum PhotosApi {
 
 extension PhotosApi: TargetType {
   public var baseURL: URL {
-    return URL(string: "https://wedding-backend-develop.herokuapp.com/")!
+    return URL(string: "https://qa-test-backend.reigndesignapps.com/")!
   }
   
   public var path: String {

@@ -20,7 +20,7 @@ class DetailWishViewController: BasePopup {
     super.viewDidLoad()
     
     commentTextView.text = wish?.comment
-    nameLabel.text = "\(wish?.user.firstName ?? "") \(wish?.user.lastName ?? "")"
+    nameLabel.text = "\(wish?.user?.firstName ?? "") \(wish?.user?.lastName ?? "")"
   }
   
   @IBAction func closeButtonPressed(_ sender: UIButton) {

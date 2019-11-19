@@ -12,7 +12,7 @@ import Moya
 
 class Wish: Codable {
   var id: String = ""
-  var user: User = User()
+  var user: User? = nil
   var comment: String = ""
   
   private enum CodingKeys: String, CodingKey {

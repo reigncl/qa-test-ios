@@ -5,10 +5,10 @@ platform :ios, '11.0'
 use_frameworks!
 
 def pods
-  pod 'PKHUD'
-  pod 'Swinject'
+  pod 'PKHUD', '~> 5.0'
+  pod 'Swinject', '~> 2.6.2'
   pod 'SwinjectStoryboard'
-  pod 'Moya' , '~> 11.0'
+  pod 'Moya' , '~> 13.0'
   pod 'Kingfisher'
   pod 'SwiftLint'
   pod 'IQKeyboardManagerSwift'

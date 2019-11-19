@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1363D1F55541F7E991C2665A /* Pods_wedding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE025559115A7A1FC8494A50 /* Pods_wedding.framework */; };
 		2DDEA991A1F9FDED435E4C7B /* Pods_weddingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA3E99871113A8F19BB47F9 /* Pods_weddingTests.framework */; };
 		A7EAEC80F3FA4D3A4B4F3BA1 /* Pods_weddingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A4EEF02B3FAE1AD46C43E9 /* Pods_weddingUITests.framework */; };
+		E374930D238434CD006E94B6 /* ApplicationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E374930C238434CD006E94B6 /* ApplicationModule.swift */; };
 		E82F6F3622130CB20098204F /* Date+offset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F3522130CB10098204F /* Date+offset.swift */; };
 		E82F6F38221317430098204F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F37221317430098204F /* RegisterViewController.swift */; };
 		E82F6F3A221317810098204F /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82F6F39221317810098204F /* Register.storyboard */; };
@@ -17,12 +18,8 @@
 		E82F6F3E221336E90098204F /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F3D221336E90098204F /* RegisterPresenter.swift */; };
 		E82F6F4122133BB70098204F /* InvitationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F4022133BB70098204F /* InvitationViewController.swift */; };
 		E82F6F4322133BC90098204F /* Invitation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82F6F4222133BC90098204F /* Invitation.storyboard */; };
-		E82F6F4522134A6C0098204F /* GiftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F4422134A6C0098204F /* GiftTableViewCell.swift */; };
-		E82F6F4722134A810098204F /* GiftTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F4622134A810098204F /* GiftTableViewDataSource.swift */; };
 		E82F6F4922134AF30098204F /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F4822134AF30098204F /* Gift.swift */; };
 		E82F6F4B22134BB10098204F /* GiftRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F4A22134BB10098204F /* GiftRepository.swift */; };
-		E82F6F4D22134FB60098204F /* GiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F4C22134FB60098204F /* GiftView.swift */; };
-		E82F6F4F22134FE20098204F /* GiftPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F4E22134FE20098204F /* GiftPresenter.swift */; };
 		E878FA992211BA88005A5FF8 /* UIApplication+topViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E878FA982211BA88005A5FF8 /* UIApplication+topViewController.swift */; };
 		E878FA9C2211BAE0005A5FF8 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E878FA9A2211BAE0005A5FF8 /* Screen.swift */; };
 		E878FA9D2211BAE0005A5FF8 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E878FA9B2211BAE0005A5FF8 /* Wireframe.swift */; };
@@ -73,7 +70,6 @@
 		E88DBAAA220DDD7A009F490E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBAA6220DDD7A009F490E /* BaseView.swift */; };
 		E88DBAAB220DDD7A009F490E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBAA7220DDD7A009F490E /* BaseViewController.swift */; };
 		E88DBAAC220DDD7A009F490E /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBAA8220DDD7A009F490E /* BasePresenter.swift */; };
-		E88DBAB6220DE063009F490E /* ApplicationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBAB5220DE063009F490E /* ApplicationModule.swift */; };
 		E88DBAB8220DE077009F490E /* PresentationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBAB7220DE077009F490E /* PresentationModule.swift */; };
 		E88DBABC220DE0D2009F490E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBABA220DE0D2009F490E /* Constants.swift */; };
 		E88DBABD220DE0D2009F490E /* MediaUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBABB220DE0D2009F490E /* MediaUtils.swift */; };
@@ -82,7 +78,6 @@
 		E88DBAC3220DE63A009F490E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBAC2220DE63A009F490E /* HomeViewController.swift */; };
 		E88DBAC5220DE6B5009F490E /* SitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBAC4220DE6B5009F490E /* SitesViewController.swift */; };
 		E88DBAC7220DE6F5009F490E /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBAC6220DE6F5009F490E /* PhotosViewController.swift */; };
-		E88DBAC9220DE76A009F490E /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBAC8220DE76A009F490E /* GiftViewController.swift */; };
 		E88DBACB220DE78E009F490E /* WishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88DBACA220DE78E009F490E /* WishesViewController.swift */; };
 		F909C23B22125095005232EF /* DetailSiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F909C23A22125095005232EF /* DetailSiteViewController.swift */; };
 		F909C23D221250DD005232EF /* Sites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F909C23C221250DD005232EF /* Sites.storyboard */; };
@@ -117,6 +112,7 @@
 		7C4CF28F95B17FD023357BBB /* Pods-wedding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wedding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wedding/Pods-wedding.debug.xcconfig"; sourceTree = "<group>"; };
 		9ABACAF71244778CBD612DD2 /* Pods-weddingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weddingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-weddingUITests/Pods-weddingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CE025559115A7A1FC8494A50 /* Pods_wedding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wedding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E374930C238434CD006E94B6 /* ApplicationModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationModule.swift; sourceTree = "<group>"; };
 		E82F6F3522130CB10098204F /* Date+offset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+offset.swift"; sourceTree = "<group>"; };
 		E82F6F37221317430098204F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E82F6F39221317810098204F /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
@@ -124,12 +120,8 @@
 		E82F6F3D221336E90098204F /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		E82F6F4022133BB70098204F /* InvitationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationViewController.swift; sourceTree = "<group>"; };
 		E82F6F4222133BC90098204F /* Invitation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Invitation.storyboard; sourceTree = "<group>"; };
-		E82F6F4422134A6C0098204F /* GiftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftTableViewCell.swift; sourceTree = "<group>"; };
-		E82F6F4622134A810098204F /* GiftTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftTableViewDataSource.swift; sourceTree = "<group>"; };
 		E82F6F4822134AF30098204F /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		E82F6F4A22134BB10098204F /* GiftRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftRepository.swift; sourceTree = "<group>"; };
-		E82F6F4C22134FB60098204F /* GiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftView.swift; sourceTree = "<group>"; };
-		E82F6F4E22134FE20098204F /* GiftPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftPresenter.swift; sourceTree = "<group>"; };
 		E878FA982211BA88005A5FF8 /* UIApplication+topViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+topViewController.swift"; sourceTree = "<group>"; };
 		E878FA9A2211BAE0005A5FF8 /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		E878FA9B2211BAE0005A5FF8 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
@@ -186,7 +178,6 @@
 		E88DBAA6220DDD7A009F490E /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		E88DBAA7220DDD7A009F490E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E88DBAA8220DDD7A009F490E /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
-		E88DBAB5220DE063009F490E /* ApplicationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationModule.swift; sourceTree = "<group>"; };
 		E88DBAB7220DE077009F490E /* PresentationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationModule.swift; sourceTree = "<group>"; };
 		E88DBABA220DE0D2009F490E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E88DBABB220DE0D2009F490E /* MediaUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaUtils.swift; sourceTree = "<group>"; };
@@ -195,7 +186,6 @@
 		E88DBAC2220DE63A009F490E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E88DBAC4220DE6B5009F490E /* SitesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesViewController.swift; sourceTree = "<group>"; };
 		E88DBAC6220DE6F5009F490E /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
-		E88DBAC8220DE76A009F490E /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
 		E88DBACA220DE78E009F490E /* WishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishesViewController.swift; sourceTree = "<group>"; };
 		F909C23A22125095005232EF /* DetailSiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSiteViewController.swift; sourceTree = "<group>"; };
 		F909C23C221250DD005232EF /* Sites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sites.storyboard; sourceTree = "<group>"; };
@@ -496,18 +486,6 @@
 			path = home;
 			sourceTree = "<group>";
 		};
-		E88DBAA2220DDCA8009F490E /* gift */ = {
-			isa = PBXGroup;
-			children = (
-				E88DBAC8220DE76A009F490E /* GiftViewController.swift */,
-				E82F6F4422134A6C0098204F /* GiftTableViewCell.swift */,
-				E82F6F4622134A810098204F /* GiftTableViewDataSource.swift */,
-				E82F6F4C22134FB60098204F /* GiftView.swift */,
-				E82F6F4E22134FE20098204F /* GiftPresenter.swift */,
-			);
-			path = gift;
-			sourceTree = "<group>";
-		};
 		E88DBAA3220DDCB8009F490E /* wishes */ = {
 			isa = PBXGroup;
 			children = (
@@ -540,7 +518,6 @@
 			children = (
 				E82F6F3F22133BA00098204F /* invitation */,
 				E88DBAA3220DDCB8009F490E /* wishes */,
-				E88DBAA2220DDCA8009F490E /* gift */,
 				E88DBAA1220DDCA3009F490E /* home */,
 				E88DBAA0220DDC9E009F490E /* photos */,
 				E88DBA9F220DDC97009F490E /* sites */,
@@ -571,7 +548,7 @@
 		E88DBAB4220DDFD2009F490E /* di */ = {
 			isa = PBXGroup;
 			children = (
-				E88DBAB5220DE063009F490E /* ApplicationModule.swift */,
+				E374930C238434CD006E94B6 /* ApplicationModule.swift */,
 				E88DBAB7220DE077009F490E /* PresentationModule.swift */,
 			);
 			path = di;
@@ -755,35 +732,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-weddingTests/Pods-weddingTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weddingTests/Pods-weddingTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weddingTests/Pods-weddingTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weddingTests/Pods-weddingTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-weddingTests/Pods-weddingTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9B902AF9E3236B649DD2B610 /* [CP] Embed Pods Frameworks */ = {
@@ -791,31 +749,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-wedding/Pods-wedding-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wedding/Pods-wedding-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wedding/Pods-wedding-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wedding/Pods-wedding-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wedding/Pods-wedding-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB3161C346D1F45BD33F4D6B /* [CP] Check Pods Manifest.lock */ = {
@@ -859,31 +802,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-weddingUITests/Pods-weddingUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
-				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weddingUITests/Pods-weddingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-weddingUITests/Pods-weddingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weddingUITests/Pods-weddingUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-weddingUITests/Pods-weddingUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -918,7 +846,7 @@
 				E88DBACB220DE78E009F490E /* WishesViewController.swift in Sources */,
 				E82F6F38221317430098204F /* RegisterViewController.swift in Sources */,
 				E88DBAB8220DE077009F490E /* PresentationModule.swift in Sources */,
-				E88DBAB6220DE063009F490E /* ApplicationModule.swift in Sources */,
+				E374930D238434CD006E94B6 /* ApplicationModule.swift in Sources */,
 				E878FACC22121186005A5FF8 /* AddPhotoView.swift in Sources */,
 				F909C24122127593005232EF /* UIImage+imagewithcolor.swift in Sources */,
 				E878FAB32211D80E005A5FF8 /* HeaderTableViewCell.swift in Sources */,
@@ -934,7 +862,6 @@
 				E88DBAA9220DDD7A009F490E /* BasePopup.swift in Sources */,
 				E88DBA8A220DCFE9009F490E /* WishesApi.swift in Sources */,
 				E88DBA99220DD769009F490E /* User.swift in Sources */,
-				E82F6F4D22134FB60098204F /* GiftView.swift in Sources */,
 				E88DBA97220DD72E009F490E /* Photo.swift in Sources */,
 				E82F6F4B22134BB10098204F /* GiftRepository.swift in Sources */,
 				E88DBA91220DD679009F490E /* SitesRepository.swift in Sources */,
@@ -946,9 +873,7 @@
 				E88DBA4E220DC5F7009F490E /* AppDelegate.swift in Sources */,
 				E88DBAC5220DE6B5009F490E /* SitesViewController.swift in Sources */,
 				E878FAAF2211D3A1005A5FF8 /* SitesView.swift in Sources */,
-				E82F6F4722134A810098204F /* GiftTableViewDataSource.swift in Sources */,
 				E878FAB72211E8E3005A5FF8 /* WishesTableViewDataSource.swift in Sources */,
-				E88DBAC9220DE76A009F490E /* GiftViewController.swift in Sources */,
 				E88DBA88220DCFDE009F490E /* SitesApi.swift in Sources */,
 				F909C23B22125095005232EF /* DetailSiteViewController.swift in Sources */,
 				E878FAC02211F0C6005A5FF8 /* CreateWishViewController.swift in Sources */,
@@ -959,8 +884,6 @@
 				E88DBA84220DCF38009F490E /* DataModule.swift in Sources */,
 				E878FAA12211BBEC005A5FF8 /* PhotosPresenter.swift in Sources */,
 				E878FA9F2211BB9A005A5FF8 /* PhotosView.swift in Sources */,
-				E82F6F4F22134FE20098204F /* GiftPresenter.swift in Sources */,
-				E82F6F4522134A6C0098204F /* GiftTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

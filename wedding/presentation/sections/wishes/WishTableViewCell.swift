@@ -25,7 +25,7 @@ class WishTableViewCell: UITableViewCell {
     }
 
   func bind(_ wish: Wish) {
-    nameLabel.text = "\(wish.user.firstName) \(wish.user.lastName)"
+    nameLabel.text = "\(wish.user?.firstName ?? "") \(wish.user?.lastName ?? "")"
     commentLabel.text = wish.comment
   }
 }
