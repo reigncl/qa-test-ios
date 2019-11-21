@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sites View Controller-->
+        <!--ASO Conference-->
         <scene sceneID="DoL-q8-Fos">
             <objects>
                 <viewController id="QTz-6l-xbT" customClass="SitesViewController" customModule="wedding" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="150" sectionHeaderHeight="60" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IMw-8m-Ar7">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SitesTableViewCell" rowHeight="150" id="rKB-9Y-eUX" customClass="SitesTableViewCell" customModule="wedding" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
@@ -46,7 +46,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpT-Qf-Umq">
                                                             <rect key="frame" x="112" y="46.5" width="215" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <color key="textColor" red="0.93725490199999995" green="0.3803921569" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" red="0.95294117649999999" green="0.43921568630000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -92,7 +92,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.93725490196078431" green="0.38039215686274508" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.95294117649999999" green="0.43921568630000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="ENN-NF-IsZ" firstAttribute="centerY" secondItem="xFg-VR-N4X" secondAttribute="centerY" id="0Df-5x-F9B"/>
                                                 <constraint firstItem="ENN-NF-IsZ" firstAttribute="leading" secondItem="xFg-VR-N4X" secondAttribute="leading" constant="16" id="4G5-Dt-TOh"/>
@@ -105,7 +105,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="e9J-6X-Gja" firstAttribute="trailing" secondItem="IMw-8m-Ar7" secondAttribute="trailing" id="8vU-gt-346"/>
                             <constraint firstItem="IMw-8m-Ar7" firstAttribute="top" secondItem="e9J-6X-Gja" secondAttribute="top" id="QwR-QY-791"/>
@@ -114,7 +114,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="e9J-6X-Gja"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Jlo-XO-7m0"/>
+                    <navigationItem key="navigationItem" title="ASO Conference" largeTitleDisplayMode="always" id="Jlo-XO-7m0"/>
                     <connections>
                         <outlet property="siteTableView" destination="IMw-8m-Ar7" id="VSB-db-4MO"/>
                     </connections>
@@ -123,7 +123,7 @@
             </objects>
             <point key="canvasLocation" x="849" y="90"/>
         </scene>
-        <!--Wishes View Controller-->
+        <!--ASO Conference-->
         <scene sceneID="UvA-xk-BwX">
             <objects>
                 <viewController id="K6F-dR-7hn" customClass="WishesViewController" customModule="wedding" customModuleProvider="target" sceneMemberID="viewController">
@@ -133,7 +133,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vKR-jl-lNa">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WishTableViewCell" id="cfs-BP-Djp" customClass="WishTableViewCell" customModule="wedding" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="120"/>
@@ -181,7 +181,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Abk-5r-JZH"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4mj-Lq-Nog"/>
+                    <navigationItem key="navigationItem" title="ASO Conference" id="4mj-Lq-Nog"/>
                     <connections>
                         <outlet property="wishTableView" destination="vKR-jl-lNa" id="aze-Ye-w1E"/>
                     </connections>
@@ -190,7 +190,7 @@
             </objects>
             <point key="canvasLocation" x="-895" y="869"/>
         </scene>
-        <!--Home View Controller-->
+        <!--ASO Conference-->
         <scene sceneID="LDp-sy-50L">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="XaK-5c-mKg" customClass="HomeViewController" customModule="wedding" customModuleProvider="target" sceneMemberID="viewController">
@@ -199,25 +199,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_image" translatesAutoresizingMaskIntoConstraints="NO" id="oRu-vr-Xdk">
-                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <rect key="frame" x="16" y="64" width="343" height="193"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="oRu-vr-Xdk" secondAttribute="height" multiplier="15:8" id="9KR-jt-9vh"/>
+                                    <constraint firstAttribute="width" secondItem="oRu-vr-Xdk" secondAttribute="height" multiplier="16:9" id="9KR-jt-9vh"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4HO-l4-OsV">
-                                <rect key="frame" x="20" y="438" width="335" height="160"/>
+                                <rect key="frame" x="87.5" y="378" width="200" height="200"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bckg_timer" translatesAutoresizingMaskIntoConstraints="NO" id="nEl-aG-H9Q">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="160"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NC8-pw-mjl">
-                                        <rect key="frame" x="134.5" y="40" width="66.5" height="33.5"/>
+                                        <rect key="frame" x="67" y="40" width="66.5" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSi-kp-Wgf">
-                                        <rect key="frame" x="143.5" y="81.5" width="48" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSi-kp-Wgf">
+                                        <rect key="frame" x="16" y="81.5" width="168" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -225,33 +222,31 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="nEl-aG-H9Q" firstAttribute="leading" secondItem="4HO-l4-OsV" secondAttribute="leading" id="3pz-Fj-fEs"/>
+                                    <constraint firstAttribute="trailing" secondItem="KSi-kp-Wgf" secondAttribute="trailing" constant="16" id="7ew-AF-xab"/>
                                     <constraint firstItem="KSi-kp-Wgf" firstAttribute="centerX" secondItem="4HO-l4-OsV" secondAttribute="centerX" id="Br3-47-Xrb"/>
                                     <constraint firstItem="NC8-pw-mjl" firstAttribute="centerX" secondItem="4HO-l4-OsV" secondAttribute="centerX" id="KFl-UV-7rz"/>
-                                    <constraint firstAttribute="trailing" secondItem="nEl-aG-H9Q" secondAttribute="trailing" id="U4J-VU-OBm"/>
-                                    <constraint firstAttribute="bottom" secondItem="nEl-aG-H9Q" secondAttribute="bottom" id="YjZ-Ct-jcI"/>
+                                    <constraint firstItem="KSi-kp-Wgf" firstAttribute="leading" secondItem="4HO-l4-OsV" secondAttribute="leading" constant="16" id="Q94-iR-F5l"/>
                                     <constraint firstItem="KSi-kp-Wgf" firstAttribute="top" secondItem="NC8-pw-mjl" secondAttribute="bottom" constant="8" id="bmg-6R-QKv"/>
                                     <constraint firstItem="NC8-pw-mjl" firstAttribute="top" secondItem="4HO-l4-OsV" secondAttribute="top" constant="40" id="gUj-Dn-h7b"/>
-                                    <constraint firstAttribute="width" secondItem="4HO-l4-OsV" secondAttribute="height" multiplier="335:160" id="oEk-zC-67n"/>
-                                    <constraint firstItem="nEl-aG-H9Q" firstAttribute="top" secondItem="4HO-l4-OsV" secondAttribute="top" id="yqC-yc-Oc2"/>
+                                    <constraint firstAttribute="height" constant="200" id="rdJ-Xi-hJL"/>
+                                    <constraint firstAttribute="width" constant="200" id="zm9-Nn-dkM"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="oRu-vr-Xdk" firstAttribute="leading" secondItem="lFi-dc-UOL" secondAttribute="leading" id="7KC-b9-PuC"/>
-                            <constraint firstItem="lFi-dc-UOL" firstAttribute="bottom" secondItem="4HO-l4-OsV" secondAttribute="bottom" constant="20" id="EYm-Ob-0mH"/>
-                            <constraint firstItem="lFi-dc-UOL" firstAttribute="trailing" secondItem="oRu-vr-Xdk" secondAttribute="trailing" id="HFW-X3-FOh"/>
-                            <constraint firstItem="lFi-dc-UOL" firstAttribute="trailing" secondItem="4HO-l4-OsV" secondAttribute="trailing" constant="20" id="KeF-ec-GSb"/>
-                            <constraint firstItem="oRu-vr-Xdk" firstAttribute="top" secondItem="lFi-dc-UOL" secondAttribute="top" constant="20" id="bZb-lR-Hxu"/>
-                            <constraint firstItem="4HO-l4-OsV" firstAttribute="leading" secondItem="lFi-dc-UOL" secondAttribute="leading" constant="20" id="s8s-DU-hcI"/>
+                            <constraint firstItem="lFi-dc-UOL" firstAttribute="bottom" secondItem="4HO-l4-OsV" secondAttribute="bottom" constant="40" id="EYm-Ob-0mH"/>
+                            <constraint firstItem="4HO-l4-OsV" firstAttribute="centerX" secondItem="yyV-1i-RqD" secondAttribute="centerX" id="Q6g-ls-HMN"/>
+                            <constraint firstItem="oRu-vr-Xdk" firstAttribute="centerX" secondItem="yyV-1i-RqD" secondAttribute="centerX" id="Swx-tP-x1R"/>
+                            <constraint firstItem="oRu-vr-Xdk" firstAttribute="top" secondItem="lFi-dc-UOL" secondAttribute="top" constant="20" id="taQ-kP-uFp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lFi-dc-UOL"/>
                     </view>
-                    <navigationItem key="navigationItem" id="inn-2m-V0K"/>
+                    <navigationItem key="navigationItem" title="ASO Conference" id="inn-2m-V0K"/>
                     <connections>
                         <outlet property="daysLabel" destination="NC8-pw-mjl" id="EFq-gI-1dO"/>
                         <outlet property="homeImageView" destination="oRu-vr-Xdk" id="H6a-40-vaH"/>
+                        <outlet property="timeView" destination="4HO-l4-OsV" id="6tL-6i-lhm"/>
                         <outlet property="timerLabel" destination="KSi-kp-Wgf" id="94p-Mt-3dO"/>
                     </connections>
                 </viewController>
@@ -268,8 +263,8 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.72941176470588232" green="0.8666666666666667" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.72941176470000002" green="0.86666666670000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.95294117649999999" green="0.43921568630000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="UNu-OV-sgh" kind="relationship" relationship="viewControllers" id="Zi7-Go-ShB"/>
@@ -282,7 +277,7 @@
             </objects>
             <point key="canvasLocation" x="-849" y="-135"/>
         </scene>
-        <!--Photos View Controller-->
+        <!--ASO Conference-->
         <scene sceneID="xmt-7A-IB1">
             <objects>
                 <viewController id="3Bc-kO-ovJ" customClass="PhotosViewController" customModule="wedding" customModuleProvider="target" sceneMemberID="viewController">
@@ -292,7 +287,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jwR-Na-hAJ">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="4" minimumInteritemSpacing="4" id="56V-9I-6ar">
                                     <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -334,7 +329,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DUD-Z9-ouk"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qhT-lf-ciJ"/>
+                    <navigationItem key="navigationItem" title="ASO Conference" id="qhT-lf-ciJ"/>
                     <connections>
                         <outlet property="photoCollectionView" destination="jwR-Na-hAJ" id="VLH-jz-aVL"/>
                     </connections>
@@ -347,12 +342,14 @@
         <scene sceneID="CcZ-6O-kPi">
             <objects>
                 <navigationController storyboardIdentifier="homeNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="UNu-OV-sgh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="ic_action_heart" selectedImage="ic_action_heart" id="daF-3E-WPT"/>
+                    <tabBarItem key="tabBarItem" title="" image="home" selectedImage="home" id="daF-3E-WPT">
+                        <color key="badgeColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oeU-Wg-rfH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.72941176470000002" green="0.86666666670000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="0.81999999999999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -372,9 +369,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kar-pw-dpO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.72941176470000002" green="0.86666666670000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="0.81999999999999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -398,7 +395,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sWG-N4-arK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.72941176470000002" green="0.86666666670000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="0.81999999999999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -418,7 +415,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pyg-iJ-ztQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.72941176470000002" green="0.86666666670000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="0.81999999999999995" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -431,9 +428,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bckg_timer" width="500" height="322"/>
-        <image name="home_image" width="500" height="254"/>
-        <image name="ic_action_heart" width="24" height="24"/>
+        <image name="home" width="24" height="24"/>
+        <image name="home_image" width="343" height="180"/>
         <image name="ic_action_location" width="24" height="24"/>
         <image name="ic_action_picture" width="24" height="24"/>
         <image name="ic_action_wish" width="24" height="24"/>

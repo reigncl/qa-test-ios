@@ -17,12 +17,6 @@ class Wireframe {
     return Screen(viewController: tabBarVC, isModal: true)
   }
   
-  func invitation() -> Screen {
-    let storyboard = UIStoryboard.init(name: "Invitation", bundle: nil)
-    let invitationVC = storyboard.instantiateViewController(withIdentifier: String(describing: InvitationViewController.self)) as! InvitationViewController
-    return Screen(viewController: invitationVC, isModal: false)
-  }
-  
   func detailSite(site: Site) -> Screen {
     let storyboard = UIStoryboard.init(name: "Sites", bundle: nil)
     let detailSiteVC = storyboard.instantiateViewController(withIdentifier: String(describing: DetailSiteViewController.self)) as! DetailSiteViewController

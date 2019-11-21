@@ -11,13 +11,12 @@
 		2DDEA991A1F9FDED435E4C7B /* Pods_weddingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA3E99871113A8F19BB47F9 /* Pods_weddingTests.framework */; };
 		A7EAEC80F3FA4D3A4B4F3BA1 /* Pods_weddingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16A4EEF02B3FAE1AD46C43E9 /* Pods_weddingUITests.framework */; };
 		E374930D238434CD006E94B6 /* ApplicationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E374930C238434CD006E94B6 /* ApplicationModule.swift */; };
+		E3C1A09F238645D100B62EE2 /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C1A09E238645D100B62EE2 /* UIColorExt.swift */; };
 		E82F6F3622130CB20098204F /* Date+offset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F3522130CB10098204F /* Date+offset.swift */; };
 		E82F6F38221317430098204F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F37221317430098204F /* RegisterViewController.swift */; };
 		E82F6F3A221317810098204F /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82F6F39221317810098204F /* Register.storyboard */; };
 		E82F6F3C2213368A0098204F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F3B2213368A0098204F /* RegisterView.swift */; };
 		E82F6F3E221336E90098204F /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F3D221336E90098204F /* RegisterPresenter.swift */; };
-		E82F6F4122133BB70098204F /* InvitationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F4022133BB70098204F /* InvitationViewController.swift */; };
-		E82F6F4322133BC90098204F /* Invitation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82F6F4222133BC90098204F /* Invitation.storyboard */; };
 		E82F6F4922134AF30098204F /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F4822134AF30098204F /* Gift.swift */; };
 		E82F6F4B22134BB10098204F /* GiftRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F6F4A22134BB10098204F /* GiftRepository.swift */; };
 		E878FA992211BA88005A5FF8 /* UIApplication+topViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E878FA982211BA88005A5FF8 /* UIApplication+topViewController.swift */; };
@@ -113,13 +112,12 @@
 		9ABACAF71244778CBD612DD2 /* Pods-weddingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weddingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-weddingUITests/Pods-weddingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CE025559115A7A1FC8494A50 /* Pods_wedding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wedding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E374930C238434CD006E94B6 /* ApplicationModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationModule.swift; sourceTree = "<group>"; };
+		E3C1A09E238645D100B62EE2 /* UIColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
 		E82F6F3522130CB10098204F /* Date+offset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+offset.swift"; sourceTree = "<group>"; };
 		E82F6F37221317430098204F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E82F6F39221317810098204F /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		E82F6F3B2213368A0098204F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		E82F6F3D221336E90098204F /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
-		E82F6F4022133BB70098204F /* InvitationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationViewController.swift; sourceTree = "<group>"; };
-		E82F6F4222133BC90098204F /* Invitation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Invitation.storyboard; sourceTree = "<group>"; };
 		E82F6F4822134AF30098204F /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		E82F6F4A22134BB10098204F /* GiftRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftRepository.swift; sourceTree = "<group>"; };
 		E878FA982211BA88005A5FF8 /* UIApplication+topViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+topViewController.swift"; sourceTree = "<group>"; };
@@ -149,7 +147,7 @@
 		E878FACB22121186005A5FF8 /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		E878FACD221211D2005A5FF8 /* AddPhotoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoPresenter.swift; sourceTree = "<group>"; };
 		E878FAD022121D29005A5FF8 /* DetailPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoViewController.swift; sourceTree = "<group>"; };
-		E88DBA4A220DC5F7009F490E /* wedding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wedding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E88DBA4A220DC5F7009F490E /* ASO Conference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASO Conference.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88DBA4D220DC5F7009F490E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E88DBA54220DC5F9009F490E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E88DBA57220DC5F9009F490E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -244,15 +242,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E82F6F3F22133BA00098204F /* invitation */ = {
-			isa = PBXGroup;
-			children = (
-				E82F6F4022133BB70098204F /* InvitationViewController.swift */,
-				E82F6F4222133BC90098204F /* Invitation.storyboard */,
-			);
-			path = invitation;
-			sourceTree = "<group>";
-		};
 		E878FA962211BA5D005A5FF8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +260,7 @@
 				E878FA982211BA88005A5FF8 /* UIApplication+topViewController.swift */,
 				F909C23E22125DD7005232EF /* String+html.swift */,
 				F909C24022127593005232EF /* UIImage+imagewithcolor.swift */,
+				E3C1A09E238645D100B62EE2 /* UIColorExt.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -325,7 +315,7 @@
 		E88DBA4B220DC5F7009F490E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E88DBA4A220DC5F7009F490E /* wedding.app */,
+				E88DBA4A220DC5F7009F490E /* ASO Conference.app */,
 				E88DBA5E220DC5F9009F490E /* weddingTests.xctest */,
 				E88DBA69220DC5F9009F490E /* weddingUITests.xctest */,
 			);
@@ -516,7 +506,6 @@
 		E88DBAAD220DDD95009F490E /* sections */ = {
 			isa = PBXGroup;
 			children = (
-				E82F6F3F22133BA00098204F /* invitation */,
 				E88DBAA3220DDCB8009F490E /* wishes */,
 				E88DBAA1220DDCA3009F490E /* home */,
 				E88DBAA0220DDC9E009F490E /* photos */,
@@ -590,7 +579,7 @@
 			);
 			name = wedding;
 			productName = wedding;
-			productReference = E88DBA4A220DC5F7009F490E /* wedding.app */;
+			productReference = E88DBA4A220DC5F7009F490E /* ASO Conference.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E88DBA5D220DC5F9009F490E /* weddingTests */ = {
@@ -683,7 +672,6 @@
 			files = (
 				F909C23D221250DD005232EF /* Sites.storyboard in Resources */,
 				E88DBAC1220DE32E009F490E /* TabBar.storyboard in Resources */,
-				E82F6F4322133BC90098204F /* Invitation.storyboard in Resources */,
 				E88DBA58220DC5F9009F490E /* LaunchScreen.storyboard in Resources */,
 				E878FAC22211F0FB005A5FF8 /* Wish.storyboard in Resources */,
 				E878FACA22120E4B005A5FF8 /* Photos.storyboard in Resources */,
@@ -825,6 +813,7 @@
 				E88DBABC220DE0D2009F490E /* Constants.swift in Sources */,
 				E88DBA9D220DD8C0009F490E /* Wish.swift in Sources */,
 				E878FAC52211FABC005A5FF8 /* DetailWishViewController.swift in Sources */,
+				E3C1A09F238645D100B62EE2 /* UIColorExt.swift in Sources */,
 				E878FABD2211EABB005A5FF8 /* WishesPresenter.swift in Sources */,
 				E878FAA32211BF2B005A5FF8 /* PhotosCollectionViewDataSource.swift in Sources */,
 				E88DBAAC220DDD7A009F490E /* BasePresenter.swift in Sources */,
@@ -842,7 +831,6 @@
 				E878FAA52211C2E2005A5FF8 /* PhotosCollectionViewDelegate.swift in Sources */,
 				E878FA9C2211BAE0005A5FF8 /* Screen.swift in Sources */,
 				E82F6F4922134AF30098204F /* Gift.swift in Sources */,
-				E82F6F4122133BB70098204F /* InvitationViewController.swift in Sources */,
 				E88DBACB220DE78E009F490E /* WishesViewController.swift in Sources */,
 				E82F6F38221317430098204F /* RegisterViewController.swift in Sources */,
 				E88DBAB8220DE077009F490E /* PresentationModule.swift in Sources */,
@@ -1060,9 +1048,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uharris.wedding;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ASO Conference";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1080,9 +1068,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uharris.wedding;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ASO Conference";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

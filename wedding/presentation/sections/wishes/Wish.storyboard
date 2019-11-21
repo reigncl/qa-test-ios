@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,7 +27,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qt4-zu-V3E">
                                         <rect key="frame" x="40" y="358" width="117.5" height="45"/>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.3803921569" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.43921568630000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="3Oj-RE-Zg1"/>
                                         </constraints>
@@ -42,7 +40,7 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="aM3-cr-uE2">
-                                        <rect key="frame" x="40" y="51.5" width="117.5" height="290.5"/>
+                                        <rect key="frame" x="40" y="51.5" width="255" height="290.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -50,7 +48,7 @@
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbc-3q-a3v">
                                         <rect key="frame" x="177.5" y="358" width="117.5" height="45"/>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.3803921569" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.43921568630000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Cancelar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,13 +66,13 @@
                                     <constraint firstItem="Cbc-3q-a3v" firstAttribute="bottom" secondItem="qt4-zu-V3E" secondAttribute="bottom" id="Frg-Do-6tA"/>
                                     <constraint firstItem="qt4-zu-V3E" firstAttribute="top" secondItem="aM3-cr-uE2" secondAttribute="bottom" constant="16" id="Ft7-xf-lQd"/>
                                     <constraint firstAttribute="trailing" secondItem="Cbc-3q-a3v" secondAttribute="trailing" constant="40" id="M04-DN-cAw"/>
-                                    <constraint firstItem="qt4-zu-V3E" firstAttribute="trailing" secondItem="aM3-cr-uE2" secondAttribute="trailing" id="R1F-7M-l5s"/>
                                     <constraint firstItem="Cbc-3q-a3v" firstAttribute="leading" secondItem="qt4-zu-V3E" secondAttribute="trailing" constant="20" id="ZeL-gw-aFt"/>
                                     <constraint firstItem="qt4-zu-V3E" firstAttribute="leading" secondItem="aM3-cr-uE2" secondAttribute="leading" id="bVj-tK-fbk"/>
                                     <constraint firstItem="aM3-cr-uE2" firstAttribute="top" secondItem="rG4-tj-7UI" secondAttribute="bottom" constant="16" id="e0K-gc-Usy"/>
                                     <constraint firstAttribute="bottom" secondItem="qt4-zu-V3E" secondAttribute="bottom" constant="16" id="g4M-sd-aWC"/>
                                     <constraint firstItem="Cbc-3q-a3v" firstAttribute="top" secondItem="qt4-zu-V3E" secondAttribute="top" id="nyw-NF-rhA"/>
                                     <constraint firstItem="rG4-tj-7UI" firstAttribute="top" secondItem="Txz-up-nOi" secondAttribute="top" constant="16" id="tvy-v5-Fcw"/>
+                                    <constraint firstItem="Cbc-3q-a3v" firstAttribute="trailing" secondItem="aM3-cr-uE2" secondAttribute="trailing" id="yqh-TJ-xkR"/>
                                     <constraint firstAttribute="width" secondItem="Txz-up-nOi" secondAttribute="height" multiplier="4:5" id="zc0-cS-88h"/>
                                 </constraints>
                             </view>
@@ -115,7 +113,7 @@
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ya-uW-GbV">
                                         <rect key="frame" x="40" y="358" width="255" height="45"/>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.3803921569" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.43921568630000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="1Qx-VB-OW2"/>
                                         </constraints>

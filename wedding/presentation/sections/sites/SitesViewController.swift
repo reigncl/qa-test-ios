@@ -19,7 +19,6 @@ class SitesViewController: BaseViewController<SitesPresenter>, SitesView {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
     dataSource = SitesTableViewDataSource(sites: sites)
     delegate = SitesTableViewDelegate( onSiteSelected: { index in
       self.wireframe.detailSite(site: self.sites[index]).show()

@@ -21,7 +21,7 @@ class PhotosViewController: BaseViewController<PhotosPresenter>, PhotosView, Add
     super.viewDidLoad()
     
     let barButton = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(addPhoto))
-    barButton.tintColor = UIColor.white
+    barButton.tintColor = UIColor.orangeEvent
     navigationItem.rightBarButtonItem = barButton
     
     dataSource = PhotosCollectionViewDataSource(photos: photos)

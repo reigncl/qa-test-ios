@@ -21,7 +21,7 @@ class WishesViewController: BaseViewController<WishesPresenter>, WishesView, Cre
     super.viewDidLoad()
     
     let barButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addWish))
-    barButton.tintColor = UIColor.white
+    barButton.tintColor = UIColor.orangeEvent
     navigationItem.rightBarButtonItem = barButton
     
     dataSource = WishesTableViewDataSource(wishes: wishes)
