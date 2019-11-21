@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zXp-ZT-gXY">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_camera" translatesAutoresizingMaskIntoConstraints="NO" id="zXp-ZT-gXY">
                                 <rect key="frame" x="0.0" y="16" width="375" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zXp-ZT-gXY" secondAttribute="height" multiplier="1:1" id="1wi-lk-TaT"/>
@@ -126,5 +126,6 @@
     </scenes>
     <resources>
         <image name="ic_close" width="36" height="36"/>
+        <image name="placeholder_camera" width="300" height="200"/>
     </resources>
 </document>
