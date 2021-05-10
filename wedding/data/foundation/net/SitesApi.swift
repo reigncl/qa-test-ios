@@ -14,7 +14,7 @@ public enum SitesApi {
 
 extension SitesApi: TargetType {
   public var baseURL: URL {
-    return URL(string: "https://qa-test-backend.reigndesignapps.com/")!
+    return URL(string: "https://qa-test-backend.reign.dev/")!
   }
   
   public var path: String {
